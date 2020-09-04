@@ -1,9 +1,33 @@
 ////**** Configurations ****/////
 git config --global user.name "UserName" 
 git config --global user.email example@example.com
-git config --global core.editor "vim"
+git config --global core.editor "'C:\Program Files\SmartGit\bin\smartgit.exe' -w"
 git config --list
 git help
 git help add 
+////**** Initialisation ****/////
+git init 
+git add * 
+git add filename.ext
+////ignoring file in this file
+.gitignore
+git commit -m 'Commit Message '
+git status
+////staging a file 
+git add filename.ext
+git diff --cached
+/////****  History ***////
+git log --pretty=oneline
+git log --pretty=format:"%h : %an : %ar : %s"
+///show last 2 commits
+git log -p -2
+/// show commits in last week
+git log --since=1.weeks
+/// show commits since specific date
+git log --since="2020-09-12"
+/// by specific author
+git log --author = "debbeb"
+/// show commits before certain date 
+git log --before="2020-09-14"
 
 
