@@ -1,0 +1,9 @@
+////**** Configurations ****/////
+git config --global user.name "UserName" 
+git config --global user.email example@example.com
+git config --global core.editor "vim"
+git config --list
+git help
+git help add 
+
+
