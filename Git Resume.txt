@@ -16,6 +16,8 @@ git status
 ////staging a file 
 git add filename.ext
 git diff --cached
+/// delete file from staging
+git rm -f filname.ext
 /////****  History ***////
 git log --pretty=oneline
 git log --pretty=format:"%h : %an : %ar : %s"
