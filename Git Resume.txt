@@ -31,5 +31,10 @@ git log --since="2020-09-12"
 git log --author = "debbeb"
 /// show commits before certain date 
 git log --before="2020-09-14"
+///*** remote repository ***///
+git remote add origin https://github.com/debbebi/gitResume.git
+git push origin master
+git remote -v
+git pull https://github.com/debbebi/gitResume.git
 
 
