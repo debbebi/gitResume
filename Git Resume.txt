@@ -37,5 +37,8 @@ git push origin master
 git remote -v
 git pull https://github.com/debbebi/gitResume.git
 git remote rename origin gr
-
+///*** tags ***////
+git tag 
+git tag -a v0.1 -m 'Version 0.1'
+git show v0.1
 
