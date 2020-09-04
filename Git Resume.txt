@@ -41,4 +41,8 @@ git remote rename origin gr
 git tag 
 git tag -a v0.1 -m 'Version 0.1'
 git show v0.1
+git push gr v0.1
+git push --tags
+///** alias ***///
+git config --global alias.co commit
 
