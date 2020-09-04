@@ -36,5 +36,6 @@ git remote add origin https://github.com/debbebi/gitResume.git
 git push origin master
 git remote -v
 git pull https://github.com/debbebi/gitResume.git
+git remote rename origin gr
 
 
