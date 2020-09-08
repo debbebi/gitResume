@@ -64,3 +64,11 @@ git branch --merged
 git branch --no-merged
 //show all branchs with last commit
 git branch -v
+//merge branch
+git merged fix20
+//delete merged branch
+git branch -d fix20
+//delete unmerged branch
+git branch -D fix20
+//push deleted branch
+git push origin :fix20
