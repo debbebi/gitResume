@@ -72,4 +72,3 @@ git branch -d fix20
 git branch -D fix20
 //push deleted branch
 git push origin :fix20
-//notmerged
