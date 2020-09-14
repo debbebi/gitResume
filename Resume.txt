@@ -83,5 +83,15 @@ git mergetool
 	///rebase (move a branch to new master commit )
 git rebase hotfix
 	///reverting (eliminate a commit but keep it for integrety reason)
+git revert HEAD
 	///reseting  (actually delete a commit and it may cause a problem)
-
+git reset 
+git reset aCommit
+git reset --hard
+git reset --hard aCommit
+	/// show files and directories that can remove
+git clean -n
+	/// remove untracked files
+git clean -f
+	/// remove untracked files and folders
+git clean -df
