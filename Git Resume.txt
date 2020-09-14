@@ -84,4 +84,5 @@ git mergetool
 git rebase hotfix
 	///reverting (eliminate a commit but keep it for integrety reason)
 	///reseting  (actually delete a commit and it may cause a problem)
+/// to be deleted
 
