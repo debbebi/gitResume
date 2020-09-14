@@ -1,75 +1,83 @@
-////**** Configurations ****/////
+	////**** Configurations ****/////
 git config --global user.name "UserName" 
 git config --global user.email example@example.com
 git config --global core.editor "'C:\Program Files\SmartGit\bin\smartgit.exe' -w"
 git config --list
 git help
 git help add 
-////**** Initialisation ****/////
+	////**** Initialisation ****/////
 git init 
 git add * 
 git add filename.ext
-////ignoring file in this file
+	////ignoring file in this file
 .gitignore
 git commit -m 'Commit Message '
+	///Rename last commit
+git commit --amend
 git status
-////staging a file 
+	////staging a file 
 git add filename.ext
 git diff --cached
-/// delete file from staging
+	/// delete file from staging
 git rm -f filname.ext
-/////****  History ***////
+	
+	/////****  History ***////
 git log --pretty=oneline
 git log --pretty=format:"%h : %an : %ar : %s"
-///show last 2 commits
+	///show last 2 commits
 git log -p -2
-/// show commits in last week
+	/// show commits in last week
 git log --since=1.weeks
-/// show commits since specific date
+	/// show commits since specific date
 git log --since="2020-09-12"
-/// by specific author
+	/// by specific author
 git log --author = "debbeb"
-/// show commits before certain date 
+	/// show commits before certain date 
 git log --before="2020-09-14"
-///*** remote repository ***///
+	///*** remote repository ***///
 git remote add origin https://github.com/debbebi/gitResume.git
 git push origin master
 git remote -v
 git pull https://github.com/debbebi/gitResume.git
 git remote rename origin gr
-///*** tags ***////
+	///*** tags ***////
 git tag 
 git tag -a v0.1 -m 'Version 0.1'
-/// tag specific  commit
+	/// tag specific  commit
 git tag -a v0.1 8decff
 git show v0.1
 git push gr v0.1
-//push all tags
+	//push all tags
 git push --tags
-///** alias ***///
+	///** alias ***///
 git config --global alias.co commit
 git clone link
-///** braching ***///
-//create branch
+	///** braching ***///
+	///create branch
 git branch fix20
-//switch to branch
+	///switch to branch
 git checkout fix20
-//create branch and switch to it
+	///create branch and switch to it
 git checkout -b fix20
-//show branchs
+	///show branchs
 git branch
-//show merged branchs
+	///show merged branchs
 git branch --merged
-//show no merged
+	///show no merged
 git branch --no-merged
-//show all branchs with last commit
+	///show all branchs with last commit
 git branch -v
-//merge branch
+	///merge branch
 git merged fix20
-//delete merged branch
+	///delete merged branch
 git branch -d fix20
-//delete unmerged branch
+	///delete unmerged branch
 git branch -D fix20
-//push deleted branch
+	///push deleted branch
 git push origin :fix20
-//merge conflit
+	///merge conflict
+        ///install merge tool Meld and configurate
+git config --global merge.tool meld
+git merge hotfix 
+git mergetool
+
