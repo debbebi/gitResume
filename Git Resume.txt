@@ -80,4 +80,8 @@ git push origin :fix20
 git config --global merge.tool meld
 git merge hotfix 
 git mergetool
+	///rebase (move a branch to new master commit )
+git rebase hotfix
+	///reverting (eliminate a commit but keep it for integrety reason)
+	///reseting  (actually delete a commit and it may cause a problem)
 
